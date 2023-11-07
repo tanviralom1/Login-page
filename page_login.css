@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient( 120deg,#FC354C,#0ABFBC);
+    font-family: monospace;
+    overflow: hidden;
+}
+.content{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0 10px 14px rgba(0, 0, 0,0.22), 10px 10px rgba(0, 0, 0,0.24);
+}
+.content h1{
+    text-align: center;
+    color: #0ABFBC;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.content form{
+    padding: 40px;
+    box-sizing: border-box;
+}
+.content .text_field{
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 30px 0;
+}
+.text_field input{
+    width: 100%;
+    padding: 5px 0;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.text_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #adadad;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: 5px;
+    color: #0ABFBC;
+}
+.content .pass{
+    padding: 0 20px 30px;
+    color: #adadad;
+    user-select: none;
+}
+.content .pass:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background:#2691d9 ;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: 0.5s;
+}
+.sing{
+    padding: 30px 0 0 20px;
+    color: #adadad;
+    text-transform: uppercase;
+}
+.sing a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.sing a:hover{
+    color: #0ABFBC;
+}
